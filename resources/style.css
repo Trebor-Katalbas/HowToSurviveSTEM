@@ -26,59 +26,59 @@ body{
 .separator{
     height: 10px;
     width: 66%;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-left: 17%;
+    margin-bottom: 25px;
     background-color: var(--sec-color);
     border-radius: 5px;
 }
 .body-content{
     display: flex;
-    flex-direction: row;
-    margin-bottom: 1%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
 }
-.title{
-    display: flex;
-    flex-direction: column;
-    margin-top: 4%;
-    margin-left: 12%;
-    text-align: left;
+.img-body{
+    z-index: -2;
+    border-radius: 5px 50px;
+    width: 118vmin;
+    position: absolute;
+    opacity: 0.8;
+}
+.title-1{
+    padding: 25px;
+    background: rgba(40, 40, 40, 0.92);
+    border-radius: 5px 50px;
+    margin: 14vh 1vw;
     color: var(--txt-color);
-    font-size: 55px;
-}
-.title-bg{
-    display: table;
-    margin: 4% 22% 4% 0; 
-    background-color: var(--bg-color);
-    border-radius: 15px 0;
-}
-.title-bg1{
-    display: table;
-    margin: 0 32% 0 0; 
-    background-color: var(--bg-color);
-    border-radius: 15px 0;
+    font-size: 6vmin;
 }
 #title-stem{
-    margin: 0; 
-    background-color: var(--bg-color);
     color: var(--sec-color);
-    font-size: 7rem;
-    border-radius: 15px 0;
+    font-size: 18vmin;
 }
-.body-img{
-    z-index: -1;
-    position: absolute;
-    top: 36%;
-    left: 28%;
-    width: 60%;
-    height: auto;
-    border-radius: 10px;
+#s1{
+    display: inline-block;
+    transform: rotate(-11deg);
+}
+#s2{
+    display: inline-block;
+    transform: rotate(10deg);
+}
+#s3{
+    display: inline-block;
+    transform: rotate(-12deg);
+}
+#s4{
+    display: inline-block;
+    transform: rotate(13deg);
 }
 .lowert{
     color: var(--txt-color);
-    font-size: 25px;
+    font-size: 3vmin;
     text-align: center;
     font-style: italic;
-    margin-bottom: 5%;
 }
 .slider{
     margin: 5%;
@@ -252,6 +252,13 @@ body{
         width: 80%;
         margin-left: 10%;
     }
+    .img-body{
+        display: none;
+    }
+    .title-1{
+        padding: 0px;
+        background: none;
+    }
     .header2{
         display: flex;
         justify-content: center;
@@ -274,9 +281,6 @@ body{
         width: 80%;
         margin-left: 10%;
     }
-    .title{
-        font-size: 55px;
-    }
     .lowert{
         font-size: 15px;
     }
@@ -289,7 +293,7 @@ body{
 }
 @media (max-width: 480px){
     #logo{
-    width: 80px;
+        width: 80px;
     }
     #ptxt{
         width: 55%;
@@ -299,11 +303,11 @@ body{
         margin-left: 2%;
         margin-bottom: 4%;
     }
-    .title{
-        font-size: 40px;
+    #title-stem{
+        font-size: 10px;
     }
     .lowert{
-        font-size: 12px;
+        font-size: 13px;
     }
     .slider-cont2{
         width: 300px;
