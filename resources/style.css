@@ -11,26 +11,54 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background-color: var(--bg-color);
+    background: var(--bg-color);
+    color: var(--txt-color);
 }
 .header{
     display: flex;
     justify-content: center;
+    background: rgba(25, 25, 25, 0.8);
+    border-radius: 40px;
+    padding: 20px;
 }
 #logo{
-    width: 180px;
+    width: 140px;
 }
 #ptxt{
     width: 40%;
+    height: auto;
+}
+.center-s{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .separator{
     height: 10px;
-    width: 66%;
+    width: 95%;
     margin-top: 10px;
-    margin-left: 17%;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
     background-color: var(--sec-color);
     border-radius: 5px;
+}
+.dark-mode{
+    display: flex;
+    justify-content: right;
+    margin-right: 7vmin;
+
+}
+.bx{
+    position: absolute;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #393939;
+    border-radius: 50%;
+    padding: 4px;
+    transition: 0.5s ease;
+}
+.bx:hover{
+    background-color: #5D5D5D;
 }
 .body-content{
     display: flex;
@@ -41,6 +69,7 @@ body{
 }
 .img-body{
     z-index: -2;
+    border: 5px solid var(--bg-color);
     border-radius: 5px 50px;
     width: 118vmin;
     position: absolute;
@@ -48,10 +77,9 @@ body{
 }
 .title-1{
     padding: 25px;
-    background: rgba(40, 40, 40, 0.92);
+    background: rgba(25, 25, 25, 0.92);
     border-radius: 5px 50px;
     margin: 14vh 1vw;
-    color: var(--txt-color);
     font-size: 6vmin;
 }
 #title-stem{
@@ -75,7 +103,6 @@ body{
     transform: rotate(13deg);
 }
 .lowert{
-    color: var(--txt-color);
     font-size: 3vmin;
     text-align: center;
     font-style: italic;
@@ -166,7 +193,6 @@ body{
 }
 .t2{
     text-align: right;
-    color: var(--txt-color);
     font-size: 100px;
     margin-top: 11%;
     margin-right: 2%;
@@ -247,10 +273,7 @@ body{
     }
     #ptxt{
         width: 50%;
-    }
-    .separator{
-        width: 80%;
-        margin-left: 10%;
+        height: auto;
     }
     .img-body{
         display: none;
@@ -276,10 +299,7 @@ body{
     }
     #ptxt{
         width: 45%;
-    }
-    .separator{
-        width: 80%;
-        margin-left: 10%;
+        height: auto;
     }
     .lowert{
         font-size: 15px;
@@ -291,17 +311,14 @@ body{
         width: 500px;
     }
 }
+
 @media (max-width: 480px){
     #logo{
         width: 80px;
     }
     #ptxt{
         width: 55%;
-    }
-    .separator{
-        width: 97%;
-        margin-left: 2%;
-        margin-bottom: 4%;
+        height: auto;
     }
     #title-stem{
         font-size: 10px;
