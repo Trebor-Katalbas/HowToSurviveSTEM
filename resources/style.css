@@ -23,6 +23,7 @@ body{
 }
 #logo{
     width: 140px;
+    height: auto;
 }
 #ptxt{
     width: 40%;
