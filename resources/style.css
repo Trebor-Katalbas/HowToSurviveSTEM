@@ -22,8 +22,8 @@ body{
     padding: 20px;
 }
 #logo{
-    width: 140px;
-    height: auto;
+    width: auto;
+    height: 140px;
 }
 #ptxt{
     width: 40%;
@@ -109,7 +109,7 @@ body{
     font-style: italic;
 }
 .slider{
-    margin: 5%;
+    margin: 2.5%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -190,6 +190,7 @@ body{
     display: flex;
     justify-content: center;
     flex-direction: row;
+    margin-top: 2%;
     margin-bottom: 5%;
 }
 .t2{
@@ -248,29 +249,30 @@ body{
 }
 
 .card2:nth-child(1n) {
-    background-color: #1D3E53;
+    background-color: var(--main-color);
 }
 
 .card2:nth-child(2n) {
-    background-color: #254B62;
+    background-color: var(--main-color);
 }
 
 .card2:nth-child(3n) {
-    background-color: #153B44;
+    background-color: var(--main-color);
 }
 
 .card2:nth-child(4n) {
-    background-color: #1D3E53;
+    background-color: var(--main-color);
 }
 
 .card2:nth-child(5n) {
-    background-color: #254B62;
+    background-color: var(--main-color);
 }
 
 
 @media (max-width: 1080px){
     #logo{
-    width: 140px;
+    width: auto;
+    height: 140px;
     }
     #ptxt{
         width: 50%;
@@ -296,7 +298,8 @@ body{
 }
 @media (max-width: 720px){
     #logo{
-    width: 120px;
+    width: auto;
+    height: 120px;
     }
     #ptxt{
         width: 45%;
@@ -315,7 +318,8 @@ body{
 
 @media (max-width: 480px){
     #logo{
-        width: 80px;
+        width: auto;
+        height: 80px;
     }
     #ptxt{
         width: 55%;
@@ -337,7 +341,7 @@ body{
     .t2{
         font-size: 35px;
         margin-bottom: 3%;
-        margin-top: 25%;
+        margin-top: 6%;
     }
     .name2{
         font-size: 18px;
