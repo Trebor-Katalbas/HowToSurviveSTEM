@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<link rel="icon" href="../resources/img/SHS logo.png" type="image/x-icon" />
+    <title>PERSONAL LIFE</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		* {
+			font-family: 'Rubik', sans-serif;
+		}
+		:root {
+			--bg-color: #191919;
+			--main-color: #2D4263;
+			--sec-color: #C84B31;
+			--txt-color: #ECDBBA;
+		}
+		html {
+			scroll-behavior: smooth;
+			min-height: 100vh;
+		}
+		body {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			margin: 0;
+			padding: 0;
+			background: var(--bg-color);
+			color: var(--txt-color);
+		}
+		.header-bar {
+			margin: 1%;
+			display: flex;
+			justify-content: center;
+			background: rgba(25, 25, 25, 0.8);
+			border-radius: 40px;
+			padding: 20px;
+		}
+		#logo {
+			width: auto;
+			height: 140px;
+		}
+		#ptxt {
+			width: 40%;
+			height: auto;
+		}
+		.center-s {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.separator {
+			height: 10px;
+			width: 95%;
+			margin-top: 10px;
+			margin-bottom: 10px;
+			background-color: var(--sec-color);
+			border-radius: 5px;
+		}
+		.dark-mode{
+			display: flex;
+			justify-content: right;
+			margin-right: 7vmin;
+		
+		}
+		.bx{
+			position: absolute;
+			cursor: pointer;
+			font-size: 1.2rem;
+			color: #fff;
+			background-color: #393939;
+			border-radius: 50%;
+			padding: 4px;
+			transition: 0.5s ease;
+		}
+		.bx:hover{
+			background-color: #5D5D5D;
+		}
+		.body-content {
+			display: flex;
+			margin: 1% 5%;
+		}
+		.title {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+		#p-content {
+			font-family: Tahoma, sans-serif;
+			text-align: justify;
+			font-size: 2.5vmin;
+			margin-left: 6%;
+			text-indent: 60px;
+			line-height: 1.8;
+		}
+		h1 {
+			color: var(--txt-color);
+			margin: 0;
+			font-size: 8vmin;
+			text-align: center;
+		}
+		#t-pic {
+			margin: 0;
+			width: 250px;
+			background-color: var(--bg-color);
+			border: 5px solid var(--sec-color);
+			border-radius: 50%;
+		}
+		.vid{
+			margin-bottom: 2%;
+		}
+		.second-body {
+			display: flex;
+			flex-direction: column;
+			margin: 0% 5%;
+		}
+		h3 {
+			margin: 0;
+			font-family: Tahoma, sans-serif;
+			font-weight: bolder;
+			font-size: 3vmin;
+			margin-bottom: 1%;
+		}
+		#head3 {
+			margin: 0;
+			font-family: Tahoma, sans-serif;
+			font-weight: bolder;
+			font-size: 2.6vmin;
+		}
+		#list-items {
+			font-family: Tahoma, sans-serif;
+			font-size: 2.5vmin;
+		}
+		span {
+			font-size: 2.8vmin;
+		}
+		.elinks{
+			display: flex;
+			flex-direction: column;
+			margin-bottom: 5%;
+		}
+		.exlinks{
+			text-indent: 50px;
+			color: var(--main-color);
+			text-decoration: none;
+			font-size: 2.5vmin;
+			margin: 5px;
+			transition: all ease 0.5s;
+		}
+		.exlinks:hover{
+			color: var(--sec-color);
+		}
+		footer {
+			background-color: var(--main-color);
+			color: var(--txt-color);
+            bottom: 0;
+            width: 100%;
+		  }
+		.foot-content {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+			margin-top: 1%;
+			margin-bottom: 3%;
+		}
+		.foot-title{
+			width: 30%;
+		}
+		#foot-name{
+			margin-bottom: 2px;
+			color: var(--sec-color);
+			font-size: 30px;
+		}
+		#foot-p {
+			font-family: Tahoma, sans-serif;
+			color: #fff;
+			font-size: 16px;
+    		line-height: 1.5;
+		}
+		.quicklinks ul li{
+			margin-bottom: 3%;
+		}
+		.quicklinks ul li a {
+			color: #fff;
+			text-decoration: none;
+			transition: all ease 0.5s;
+		  }
+		.quicklinks ul li a:hover{
+			color:  var(--sec-color);
+		}
+
+
+		@media (max-width: 1080px){
+			#logo{
+				width: auto;
+				height: 140px;
+			}
+			#ptxt{
+				width: 50%;
+				height: auto;
+			}
+			.body-content{
+				display: flex;
+				flex-direction: column;
+			}
+			#p-content{
+				margin: 0;
+			}
+		}
+		@media (max-width: 720px){
+			#logo{
+				width: auto;
+				height: 120px;
+			}
+			#ptxt{
+				width: 45%;
+				height: auto;
+			}
+			#t-pic{
+				width: 180px;
+			}
+			#iframe{
+				width: 300px;
+				height: 200px;
+			}
+		}
+		
+		@media (max-width: 480px){
+			#logo{
+				width: auto;
+				height: 80px;
+			}
+			#ptxt{
+				width: 55%;
+				height: auto;
+			}
+			#t-pic{
+				width: 120px;
+			}
+			#p-content{
+				text-indent: 20px;
+			}
+			#iframe{
+				width: 250px;
+				height: 150px;
+			}
+			.foot-title{
+				display: none;
+			}
+		}
+	</style>
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap"
+      rel="stylesheet"
+    />
+</head>
+
+<body>
+	<header> 
+
+		<div class="header-bar">
+			<img id="logo" src="../resources/img/Ateneo logo.png" />
+			<img id="ptxt" src="../resources/img/ateneo txt.png" />
+			<img id="logo" src="../resources/img/SHS logo.png" />
+      	</div>
+
+		<div class="center-s">
+			<div class="separator">
+			</div>
+		</div>
+
+		<div class="dark-mode">
+			<i class='bx bx-sun' id="toggleDark"></i>
+		  </div>
+
+	</header>
+	<div class="body-content">
+		<aside>
+			<div class="title">
+				
+				<img id="t-pic" src="../resources/img/personal life.png">
+				<h1> PERSONAL LIFE</h1>
+
+			</div>
+		</aside>
+		<section>
+			<p id="p-content"> Surviving in STEM fields takes effort and dedication, but the rewards are significant. Academic activities and 
+				interests are those linked with formal education and learning inside academic schools and universities, colleges, 
+				and research organizations. This involves learning about other fields and issues, conducting research, and contributing
+				 to the academic community through publications, lectures, and other intellectual activities. But dropping out is the result 
+				of years of academic challenges, blunders, and incorrect paths for some students. 
+				Some drop out as a result of competing life responsibilities, such as the necessity to financially support 
+				their family or the duties of caring for siblings or their own kid. Dropping out is sometimes motivated by 
+				boredom and a lack of connection between academic and "real" life. It is about students feeling detached 
+				from their peers, teachers, and other adults at school. It also has to do with schools and communities 
+				having insufficient resources to satisfy the complex emotional and intellectual requirements of their 
+				most vulnerable students.</p>
+		</section>
+	</div>
+
+	<div class="vid">
+		<iframe id="iframe" width="560" height="315" src="https://www.youtube.com/embed/R7iN71uJcG0" title="YouTube video player" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+	</div>
+
+	<section>
+		<div class="second-body">
+			<h3 id="head3">  With the right strategies and mindset, anyone can succeed in these fields. 
+				Here are some tips on how to survive in academics: </h3>
+			<ol>
+				<li><p id="list-items"><span> Stay organized: </span> 
+					<br> a schedule or planner and make sure you stay on top of deadlines and assignments.</p></li>
+				<li><p id="list-items"><span> Manage your time effectively: </span> 
+					<br> Prioritize your tasks and focus on the most important ones first. Avoid procrastination.</p></li>
+				<li><p id="list-items"><span> Develop good study habits: </span> 
+					<br> Find a study routine that works for you and stick to it. Make sure you take breaks and get enough rest.</p></li>
+				<li><p id="list-items"><span> Build a support network: </span> 
+					<br> Connect with professors, mentors, and peers who can offer advice and support when needed.</p></li>
+				<li><p id="list-items"><span> Take care of your mental and physical health: </span> 
+					<br> Eat well, exercise regularly, and make time for self-care. Seek help if you are struggling with mental health issues.</p></li>
+				<li><p id="list-items"><span> Keep learning: </span>
+					<br> Stay curious and continue to explore new topics and ideas. Attend conferences and workshops to stay up-to-date with developments in your field.</p></li>
+				<li><p id="list-items"><span> Be resilient: </span>
+					<br> Expect setbacks and failures along the way. Learn from them and keep pushing forward.</p></li>
+				<li><p id="list-items"><span> Take advantage of resources: </span>
+					<br> Your university likely offers a variety of academic resources such as tutoring, writing centers, and study groups. Use these resources to your advantage to improve your academic performance.</p></li>
+				<li><p id="list-items"><span> Set realistic goals: </span>
+					<br> While it's important to aim high, it's also important to set realistic goals that are achievable. This will help you maintain motivation and avoid burnout.</p></li>
+				<li><p id="list-items"><span> Take breaks: </span>
+					<br> It's important to take regular breaks to prevent burnout and maintain focus. Take short breaks throughout the day and give yourself a day off every once in a while to recharge.</p></li>
+			</ol>
+
+			<div class="elinks">
+				<h3> External Links: </h3>
+				<ul>
+					<li><a class="exlinks" href="https://www.edutopia.org/student-dropout-retention-strategies" target="_blank"> How to End the Dropout Crisis: 10 Strategies for Student Retention</a></li>
+					<li><a class="exlinks" href="https://www.frontiersin.org/articles/10.3389/fpsyg.2019.02920/full" target="_blank"> Schools That Promote the Improvement of Academic Performance and the Success of All Students</a></li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="foot-content">
+			<div class="foot-title">
+				<h2 id="foot-name"> How to Survive STEM</h2>
+				<p id="foot-p"> By developing strong foundations, building a network, <br>
+					seeking out resources, and prioritizing self-care, <br>
+					anyone can succeed in STEM. Keep learning, stay <br>
+					motivated, and enjoy the journey.</p>
+			</div>
+			
+			<div class="quicklinks">
+				<h2 id="foot-name"> QUICK LINKS</h2>
+				<ul>
+					<li><a href="../index.html"> Home</a></li>
+					<li><a href="./acad.html"> Academics</a></li>
+					<li><a href="./extraACT.html"> Extra-curricular Activities</a></li>
+					<li><a href="./social.html"> Social Life</a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+
+	<!-- JScript -->
+	<script>
+		const toggle = document.getElementById('toggleDark');
+		const body = document.querySelector('body');
+		const h1 = document.querySelector('h1');
+		const footer = document.querySelector('footer');
+
+		toggle.addEventListener('click', function(){
+		this.classList.toggle('bx-sun');
+		if(this.classList.toggle('bx-moon')){
+			body.style.background = '#ECDBBA';
+			body.style.color = '#191919';
+			h1.style.color = '#2D4263';
+			footer.style.background = '#191919';
+			body.style.transition = '2s';
+			h1.style.transition = '2s';
+			footer.style.transition = '2s';
+		} else {
+			body.style.background = '#191919';
+			body.style.color = '#ECDBBA';
+			h1.style.color = '#ECDBBA';
+			footer.style.background = '#2D4263';
+			body.style.transition = '2s';
+			h1.style.transition = '2s';
+			footer.style.transition = '2s';
+		}
+		})
+	</script>
+</body>
+</html>

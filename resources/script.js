@@ -42,6 +42,7 @@ const toggle = document.getElementById('toggleDark');
 const body = document.querySelector('body');
 const sc = document.querySelector('.slide-container');
 const t1 = document.querySelector('.title-1');
+const footer = document.querySelector('footer');
 
 toggle.addEventListener('click', function(){
   this.classList.toggle('bx-sun');
@@ -50,16 +51,20 @@ toggle.addEventListener('click', function(){
     body.style.color = '#191919';
     sc.style.background = '#2D4263';
     t1.style.background = 'rgba(236, 219, 186, 0.75)';
+    footer.style.background = '#191919';
     t1.style.transition = '4s';
     body.style.transition = '2s';
     sc.style.transition = '2s';
+    footer.style.transition = '2s';
   } else {
     body.style.background = '#191919';
     body.style.color = '#ECDBBA';
     sc.style.background = '#ECDBBA';
     t1.style.background = 'rgba(25, 25, 25, 0.92)';
+    footer.style.background = '#2D4263';
     t1.style.transition = '4s';
     body.style.transition = '2s';
     sc.style.transition = '2s';
+    footer.style.transition = '2s';
   }
 })
