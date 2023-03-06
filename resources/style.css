@@ -196,7 +196,7 @@ body{
     justify-content: center;
     flex-direction: row;
     margin-top: 2%;
-    margin-bottom: 2%;
+    margin-bottom: 4%;
 }
 .t2{
     text-align: right;
@@ -255,7 +255,8 @@ body{
     margin: 4%;
 }
 footer {
-    background-color: var(--main-color);
+    box-shadow: 0px -5px 60px 1px var(--txt-color);
+    background-color: var(--bg-color);
     color: var(--txt-color);
     bottom: 0;
     width: 100%;
@@ -291,24 +292,8 @@ ul li{
     color:  var(--sec-color);
 }
 
-.card2:nth-child(1n) {
-    background-color: var(--main-color);
-}
-
-.card2:nth-child(2n) {
-    background-color: var(--main-color);
-}
-
-.card2:nth-child(3n) {
-    background-color: var(--main-color);
-}
-
-.card2:nth-child(4n) {
-    background-color: var(--main-color);
-}
-
-.card2:nth-child(5n) {
-    background-color: var(--main-color);
+.card2 {
+    background-color: #292929;
 }
 
 
@@ -332,7 +317,7 @@ ul li{
         display: flex;
         justify-content: center;
         flex-direction: column;
-        margin-bottom: 5%;
+        margin-bottom: 14%;
     }
     .t2{
         text-align: center;
@@ -356,6 +341,9 @@ ul li{
     }
     .slider-cont2{
         width: 500px;
+    }
+    .header2 {
+        margin-bottom: 16%;
     }
 }
 
@@ -382,6 +370,9 @@ ul li{
         font-size: 35px;
         margin-bottom: 3%;
         margin-top: 6%;
+    }
+    .header2 {
+        margin-bottom: 0%;
     }
     .name2{
         font-size: 18px;

@@ -92,7 +92,7 @@
 		#p-content {
 			font-family: Tahoma, sans-serif;
 			text-align: justify;
-			font-size: 2.5vmin;
+			font-size: 3vmin;
 			margin-left: 6%;
 			text-indent: 60px;
 			line-height: 1.8;
@@ -104,7 +104,7 @@
 			text-align: center;
 		}
 		#t-pic {
-			margin: 0;
+			margin-top: 40%;
 			width: 250px;
 			background-color: var(--bg-color);
 			border: 5px solid var(--sec-color);
@@ -117,35 +117,36 @@
 			display: flex;
 			flex-direction: column;
 			margin: 0% 5%;
+			margin-bottom: 12%
 		}
 		h3 {
 			margin: 0;
 			font-family: Tahoma, sans-serif;
 			font-weight: bolder;
-			font-size: 3vmin;
-			margin-bottom: 1%;
+			font-size: 4.5vmin;
+			margin-bottom: 0%;
 		}
 		#head3 {
 			margin: 0;
+			color: var(--sec-color);
 			font-family: Tahoma, sans-serif;
 			font-weight: bolder;
-			font-size: 2.6vmin;
+			font-size: 4.5vmin;
 		}
 		#list-items {
 			font-family: Tahoma, sans-serif;
-			font-size: 2.5vmin;
+			font-size: 3vmin;
 		}
 		span {
-			font-size: 2.8vmin;
+			font-size: 3.5vmin;
 		}
 		.elinks{
 			display: flex;
 			flex-direction: column;
-			margin-bottom: 5%;
 		}
 		.exlinks{
 			text-indent: 50px;
-			color: var(--main-color);
+			color: #5D5D5D;
 			text-decoration: none;
 			font-size: 2.5vmin;
 			margin: 5px;
@@ -155,7 +156,8 @@
 			color: var(--sec-color);
 		}
 		footer {
-			background-color: var(--main-color);
+			box-shadow: 0px -5px 60px 1px var(--txt-color);
+			background: var(--bg-color);
 			color: var(--txt-color);
             bottom: 0;
             width: 100%;
@@ -210,6 +212,12 @@
 			#p-content{
 				margin: 0;
 			}
+			#t-pic{
+				margin-top: 1%;
+			}
+			.title{
+				margin-bottom: 3%;
+			}
 		}
 		@media (max-width: 720px){
 			#logo{
@@ -226,6 +234,9 @@
 			#iframe{
 				width: 300px;
 				height: 200px;
+			}
+			.second-body {
+				margin-bottom: 18%
 			}
 		}
 		
@@ -247,6 +258,9 @@
 			#iframe{
 				width: 250px;
 				height: 150px;
+			}
+			.second-body {
+				margin-bottom: 24%
 			}
 			.foot-title{
 				display: none;
@@ -375,7 +389,6 @@
 		const toggle = document.getElementById('toggleDark');
 		const body = document.querySelector('body');
 		const h1 = document.querySelector('h1');
-		const footer = document.querySelector('footer');
 
 		toggle.addEventListener('click', function(){
 		this.classList.toggle('bx-sun');
@@ -383,18 +396,14 @@
 			body.style.background = '#ECDBBA';
 			body.style.color = '#191919';
 			h1.style.color = '#2D4263';
-			footer.style.background = '#191919';
 			body.style.transition = '2s';
 			h1.style.transition = '2s';
-			footer.style.transition = '2s';
 		} else {
 			body.style.background = '#191919';
 			body.style.color = '#ECDBBA';
 			h1.style.color = '#ECDBBA';
-			footer.style.background = '#2D4263';
 			body.style.transition = '2s';
 			h1.style.transition = '2s';
-			footer.style.transition = '2s';
 		}
 		})
 	</script>
