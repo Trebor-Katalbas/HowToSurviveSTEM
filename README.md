@@ -1,1 +1,3 @@
 # HowToSurviveSTEM
+
+a blog website
